@@ -18,7 +18,9 @@ import Blank from "./pages/Blank";
 import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
-
+import InvestorTables from "./pages/Tables/InvestorTables.tsx"
+import PartnerTable from "./pages/Tables/PartnerTable.tsx"
+import StartupTables from "./pages/Tables/StartupTables.tsx"
 export default function App() {
   return (
     <>
@@ -39,7 +41,9 @@ export default function App() {
 
             {/* Tables */}
             <Route path="/basic-tables" element={<BasicTables />} />
-
+            <Route path="/investor" element={<InvestorTables />} />
+            <Route path="/partner" element={<PartnerTable/>} />
+            <Route path="/startup" element={<StartupTables />} />
             {/* Ui Elements */}
             <Route path="/alerts" element={<Alerts />} />
             <Route path="/avatars" element={<Avatars />} />
